@@ -65,7 +65,7 @@ function newQuote() {
 //requires quotes array
 //returns random quote object
 let num = Math.floor(Math.random()*quotes.length);
-return {quote: quotes[num][0], name: quotes[num][1]};
+return {quote: quotes[num][0], name: quotes[num][1], score: quotes[num][2]};
 }
 
 function allQuotes() {
