@@ -61,12 +61,19 @@ const quotes = [
         ["If we can hit that bulls-eye, the rest of the dominoes will fall like a house of cards. Checkmate.", "Zapp Brannigan", 2],
       ];
 
-      function newQuote() {
-        //requires quotes array
-        let num = Math.floor(Math.random()*quotes.length);
-        let quote = quotes[num][0];
-        let name = quotes[num][1];
-        return {quote: quote, name: name};
-      }
+function newQuote() {
+//requires quotes array
+//returns random quote object
+let num = Math.floor(Math.random()*quotes.length);
+return {quote: quotes[num][0], name: quotes[num][1]};
+}
 
-      exports.newQuote = newQuote;
+function allQuotes() {
+  const quotesObj = quotes.map((q) => {
+    return {quote: q[0], name: q[1], score: q[2]};
+  });
+  return quotesObj;
+}
+
+exports.newQuote = newQuote;
+exports.allQuotes = allQuotes;
