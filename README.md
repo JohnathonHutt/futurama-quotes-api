@@ -19,7 +19,7 @@ For all the quotes:
 
 https://futuramaquoteapi.herokuapp.com/allquotes
 
-It also hosts a Futurama quote trivia game
+Or to play a Futurama quote trivia game using the quotes:
 
 https://futuramaquoteapi.herokuapp.com/playgame
 
