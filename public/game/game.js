@@ -7,7 +7,7 @@ let quotes;
 let shuffledQuotes;
 
 
-fetch('http://localhost:5000/allquotes')
+fetch('https://fururamaquoteapi.herokuapp.com/allquotes')
   .then(response => response.json())
   .then(data => {
     quotes = data;
