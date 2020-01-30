@@ -9,18 +9,18 @@ The quote structure is:
 
 For the home page with links and instructions:
 
-https://fururamaquoteapi.herokuapp.com
+https://futuramaquoteapi.herokuapp.com
 
 For one randomly chosen futurama quote:
 
-https://fururamaquoteapi.herokuapp.com/randomquote
+https://futuramaquoteapi.herokuapp.com/randomquote
 
 For all the quotes:
 
-https://fururamaquoteapi.herokuapp.com/allquotes
+https://futuramaquoteapi.herokuapp.com/allquotes
 
 It also hosts a Futurama quote trivia game
 
-https://fururamaquoteapi.herokuapp.com/playgame
+https://futuramaquoteapi.herokuapp.com/playgame
 
 This project uses node.js, heroku and native web technologies (vanilla javascript, HTML and CSS)
