@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(1em + 1vh);
+}
+
+body {
+  background-image: url("../images/fry-1000.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+#container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  padding-top: 0.625rem;
+}
+
+.question {
+  background-color: rgb(212, 232, 243);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0.934rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.answerBox {
+  margin: 0 auto;
+  border: 0.125rem solid white;
+  width: 90%;
+  color: white;
+  background-color: rgb(31, 41, 166);
+  background-color: rgba(31, 41, 166, 0.4);
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.answerTop {
+  border-bottom: 0.0625rem dashed white;
+  padding: 0.8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.answerMid {
+  border-bottom: 0.0625rem dashed white;
+  border-top: 0.0625rem dashed white;
+  padding: 0.8rem;
+}
+
+.answerBottom {
+  border-top: 0.0625rem dashed white;
+  padding: 0.8rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.answer:hover {
+  color: black;
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  background-color: rgb(31, 41, 166);
+  background-color: rgba(31, 41, 166, 0.4);
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 1.56rem 1.56rem;
+  border: 0.1875rem solid black;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 650px) {
+  #container {
+    max-width: 650px;
+  }
+  .question {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+  }
+}

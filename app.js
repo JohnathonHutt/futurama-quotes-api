@@ -14,11 +14,19 @@ app.use(cors());
 app.options('*', cors());
 
 //set public folder
+//app.use(express.static("public"));
+
+//set path to client-build (front end) file
 app.use(express.static("public"));
 
 //serve home route
 app.get("/", function(req, res) {
-  res.sendFile("public/index.html");
+  res.sendFile(__dirname + "/routes/home.html");
+});
+
+//serve game route
+app.get("/playgame", function(req, res) {
+  res.sendFile(__dirname + "/routes/game.html");
 });
 
 //random quote route
@@ -30,6 +38,11 @@ app.get('/futurama', function (req, res) {
 app.get('/allquotes', function (req, res) {
   res.send(futurama.allQuotes());
 });
+
+//quotes matrix route for game
+app.get('/quotesforgame', function (req, res) {
+  res.send(futurama.quotesforgame);
+})
 
 
 app.listen(port, function(){

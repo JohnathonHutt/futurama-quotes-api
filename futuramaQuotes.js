@@ -75,5 +75,6 @@ function allQuotes() {
   return quotesObj;
 }
 
+exports.quotesforgame = quotes;
 exports.newQuote = newQuote;
 exports.allQuotes = allQuotes;
