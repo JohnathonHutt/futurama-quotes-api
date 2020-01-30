@@ -30,7 +30,7 @@ app.get("/playgame", function(req, res) {
 });
 
 //random quote route
-app.get('/futurama', function (req, res) {
+app.get('/randomquote', function (req, res) {
   res.send(futurama.newQuote());
 });
 
@@ -38,12 +38,6 @@ app.get('/futurama', function (req, res) {
 app.get('/allquotes', function (req, res) {
   res.send(futurama.allQuotes());
 });
-
-//quotes matrix route for game
-app.get('/quotesforgame', function (req, res) {
-  res.send(futurama.quotesforgame);
-})
-
 
 app.listen(port, function(){
   console.log(`Server is running on port ${port}`);
